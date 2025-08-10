@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gradient website</title>
+    <style>
+       
+
+    </style>
+</head>
+<body style="text-align: center;padding: 0;margin: 0;">
+   <p style="background-color: rgba(0, 0, 0, 0.942);font: 20px Arial, sans-serif;color: white;margin-bottom:200px;margin-top: 0px;height: 50px;text-align: center;padding-top: 25px;">GRADIENT GENERATOR</p>
+    <section style="background-color: rgba(255, 255, 255, 0.222);padding: 20px;border-radius: 10px;box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);max-width: 500px;margin: auto;">
+        <div>
+            <button id="button1" onclick="changeColor('button1')" style="height: 30px; margin: 10px;width: 100px;border-radius: 10px;border-color:rgba(240, 255, 255, 0);background-color: black;text-align: center;color: aliceblue;">#0000</button>
+            <button id="button2" onclick="changeColor('button2')" style="height: 30px; margin: 10px;width: 100px;border-radius: 10px;border-color:rgba(240, 255, 255, 0);background-color: black;text-align: center;color: aliceblue;">#0000</button>
+        </div>
+        <h3>copy your gradient</h3>
+        
+            <h4 id="copycode" style="background-color: rgba(128, 128, 128, 0.222);min-width: none;max-width: 300px;margin: auto;padding: 10px;border-radius: 10px;box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);">
+                background image linear-gradient(90deg, #0000 0%, #0000 100%);
+            </h4>
+      
+    </section>
+
+<script>
+let btn1 = document.getElementById('button1');
+let btn2 = document.getElementById('button2');
+const handelbutton1=()=>{
+    let myhexacolor="0123456789abcdef";
+    let color1="#";
+    for(let i=0;i<6;i++){
+        color1+=myhexacolor[Math.floor(Math.random()*myhexacolor.length)];
+    }
+    document.getElementById('button1').innerText=color1;
+    document.body.style.backgroundImage=`linear-gradient(90deg, ${btn1.innerText} 0%, ${btn2.innerText} 100%)`;
+copycode.innerHTML=`background image linear-gradient(90deg, ${btn1.innerText} 0%, ${btn2.innerText} 100%);`;
+
+}
+
+const handelbutton2=()=>{
+    let myhexacolor="0123456789abcdef";
+    let color2="#";
+    for(let i=0;i<6;i++){
+        color2+=myhexacolor[Math.floor(Math.random()*myhexacolor.length)];
+    }
+    document.getElementById('button2').innerText=color2;
+    document.body.style.backgroundImage=`linear-gradient(90deg, ${btn1.innerText} 0%, ${btn2.innerText} 100%)`;
+    copycode.innerHTML=`background image linear-gradient(90deg, ${btn1.innerText} 0%, ${btn2.innerText} 100%);`;
+
+}
+let copycode = document.getElementById('copycode');
+btn1.addEventListener('click',handelbutton1);
+btn2.addEventListener('click',handelbutton2);
+</script>
+</body>
+</html>

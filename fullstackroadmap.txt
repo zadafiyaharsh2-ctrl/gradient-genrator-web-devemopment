@@ -1,0 +1,74 @@
+PHASE 1 — Core Web Fundamentals (Frontend Basics)
+(Same as before: HTML, CSS, Git basics)
+
+PHASE 2 — Frontend Programming (JavaScript Mastery)
+(Same as before: JS basics, DOM, ES6, async, mini projects)
+
+PHASE 3 — Frontend Framework
+Goal: Learn modern frameworks to build large applications.
+
+React.js
+
+Components, Props, State
+
+JSX syntax
+
+Event handling
+
+Conditional rendering
+
+Lists & keys
+
+Forms & Controlled Components
+
+Hooks (useState, useEffect, Custom Hooks)
+
+Context API
+
+React Router
+
+State Management (Redux Toolkit / Zustand)
+
+Styling in React
+
+Tailwind CSS
+
+CSS Modules
+
+Styled Components
+
+UI/UX Enhancements
+
+Lenis — smooth scroll setup & usage
+(Install via npm, import, and use in portfolio sections for smooth navigation & animations.)
+
+GSAP / Framer Motion for animations
+
+Frontend Build Tools
+
+Vite / Webpack
+
+NPM & Package.json
+
+PHASE 4 — Backend Development
+(Node.js, Express.js, APIs, Databases)
+
+PHASE 5 — Full-Stack Integration
+(Connecting React & Node, auth, file uploads, real-time)
+
+PHASE 6 — Deployment & DevOps Basics
+(Frontend/Backend deployment, DB in cloud, env vars)
+
+PHASE 7 — Advanced Topics
+(TypeScript, Next.js, GraphQL, testing, CI/CD)
+
+PHASE 8 — Portfolio & Projects
+Portfolio site with Lenis for smooth scrolling
+
+Blog App (CRUD)
+
+E-commerce Store (Stripe)
+
+Chat App (Socket.io)
+
+Social Media Clone
